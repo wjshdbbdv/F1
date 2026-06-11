@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RACER F1 CLUB — OFFICIAL SIM EXPERIENCE</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0a0a0a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.95);
+    padding:15px;
+    text-align:center;
+    color:red;
+    font-weight:bold;
+    border-bottom:1px solid #222;
+    z-index:10;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero h1{
+    font-size:32px;
+    z-index:2;
+    color:red;
+    text-shadow:0 0 20px red;
+}
+
+.hero p{
+    z-index:2;
+    color:#ccc;
+}
+
+.btn{
+    z-index:2;
+    margin-top:15px;
+    padding:12px 25px;
+    background:linear-gradient(45deg,#0066ff,#00ccff);
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+    padding:60px 20px;
+}
+
+.title{
+    color:red;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+/* BOX */
+.box{
+    background:#111;
+    padding:15px;
+    border-left:3px solid red;
+    margin-bottom:10px;
+    border-radius:10px;
+    color:#ccc;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.card{
+    background:#151515;
+    padding:15px;
+    border-radius:15px;
+    border:1px solid #222;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* PILOTS */
+.scroll{
+    display:flex;
+    overflow-x:auto;
+    gap:15px;
+}
+
+.pilot{
+    min-width:220px;
+    background:#151515;
+    padding:10px;
+    border-radius:15px;
+}
+
+/* BIG IMAGE */
+.bigimg{
+    width:100%;
+    border-radius:15px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    color:#555;
+    border-top:1px solid #222;
+}
+</style>
+</head>
+
+<body>
+
+<header>RACER F1 CLUB — SIMRACING EXPERIENCE</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>FORMULA 1 × SIMRACING</h1>
+    <p>Полное погружение в мир скорости и инженерии</p>
+    <a class="btn" href="#about">START EXPERIENCE</a>
+</div>
+
+<!-- ABOUT SIMRACING -->
+<section id="about">
+    <div class="title">ЧТО ТАКОЕ СИМРЕЙСИНГ</div>
+
+    <div class="box">
+        Симрейсинг — это цифровой автоспорт, где физика машин максимально приближена к реальности.
+    </div>
+
+    <div class="box">
+        Пилоты используют симуляторы для тренировки реакции, траектории и стратегии.
+    </div>
+
+    <div class="box">
+        Многие команды 0 используют симрейсинг в разработке.
+    </div>
+</section>
+
+<!-- AUTOSPORT -->
+<section>
+    <div class="title">АВТОСПОРТ</div>
+
+    <div class="box">Формула 1 — вершина инженерии и скорости.</div>
+    <div class="box">GT Racing — выносливость и стратегия.</div>
+    <div class="box">Rally — контроль на грани сцепления.</div>
+    <div class="box">Endurance — гонки до 24 часов.</div>
+</section>
+
+<!-- PILOTS -->
+<section>
+    <div class="title">ЛЕГЕНДЫ</div>
+
+    <div class="scroll">
+
+        <div class="pilot">
+            <img class="bigimg" src="https://cdn-1.motorsport.com/images/mgl/2d1Yy6mY/s8/max-verstappen-red-bull-racing.jpg">
+            <p>Max Verstappen</p>
+        </div>
+
+        <div class="pilot">
+            <img class="bigimg" src="https://cdn-2.motorsport.com/images/mgl/0a9Q4xQ0/s8/charles-leclerc-ferrari.jpg">
+            <p>Charles Leclerc</p>
+        </div>
+
+        <div class="pilot">
+            <img class="bigimg" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Nikita_Mazepin_2021.jpg">
+            <p>Mazepin 😭</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CLUB INFO -->
+<section>
+    <div class="title">RACER F1 CLUB</div>
+
+    <div class="box">🏎 Direct Drive рули</div>
+    <div class="box">🪑 Профессиональные кокпиты</div>
+    <div class="box">🎮 Тренировки как у пилотов F1</div>
+    <div class="box">🌧 Дождевые и ночные гонки</div>
+    <div class="box">📊 Аналитика пилота</div>
+</section>
+
+<!-- WHY SIMRACING -->
+<section>
+    <div class="title">ЗАЧЕМ ЭТО НУЖНО</div>
+
+    <div class="box">
+        Симрейсинг помогает развивать реакцию, концентрацию и понимание траекторий.
+    </div>
+
+    <div class="box">
+        Многие профессиональные гонщики начинали именно с виртуальных гонок.
+    </div>
+
+    <div class="box">
+        Это мост между игрой и реальным автоспортом.
+    </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section>
+    <div class="title">ОПЫТ ГОНЩИКА</div>
+
+    <div class="box">🔥 Старт с решётки</div>
+    <div class="box">🏁 Битва в первом повороте</div>
+    <div class="box">⚡ DRS зоны и обгоны</div>
+    <div class="box">🧠 Стратегия пит-стопов</div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <div class="title">КОНТАКТ</div>
+
+    <div class="box">
+        Instagram: @burhanovichh_<br>
+        Бронирование симрейсинг сессий
+    </div>
+</section>
+
+<footer>
+    © 2026 RACER F1 CLUB — ULTIMATE SIM EXPERIENCE
+</footer>
+
+</body>
+</html>
